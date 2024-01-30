@@ -25,14 +25,10 @@ class _LoginDemoState extends State<LoginDemo> {
                 child: SizedBox(
                     width: 200,
                     height: 150,
-                    /*decoration: BoxDecoration(
-                        color: Colors.red,
-                        borderRadius: BorderRadius.circular(50.0)),*/
                     child: Image.asset('asset/images/flutter-logo.png')),
               ),
             ),
             const Padding(
-              //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
               padding: EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
                 decoration: InputDecoration(
@@ -42,11 +38,10 @@ class _LoginDemoState extends State<LoginDemo> {
               ),
             ),
             const Padding(
-              padding: EdgeInsets.only(
-                  left: 15.0, right: 15.0, top: 15, bottom: 0),
+              padding:
+                  EdgeInsets.only(left: 15.0, right: 15.0, top: 15, bottom: 0),
               //padding: EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
-
                 obscureText: true,
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
@@ -55,7 +50,7 @@ class _LoginDemoState extends State<LoginDemo> {
               ),
             ),
             TextButton(
-              onPressed: (){
+              onPressed: () {
                 //TODO FORGOT PASSWORD SCREEN GOES HERE
               },
               child: const Text(
@@ -70,9 +65,8 @@ class _LoginDemoState extends State<LoginDemo> {
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
-                  Navigator.pushReplacement(
-                      context, MaterialPageRoute(builder: (_) => const HomeDemo())
-                  );
+                  Navigator.pushReplacement(context,
+                      MaterialPageRoute(builder: (_) => const HomeDemo()));
                 },
                 child: const Text(
                   'Login',
