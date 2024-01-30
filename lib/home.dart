@@ -17,8 +17,8 @@ class _HomeDemo extends State<HomeDemo> {
             width: double.infinity,
             child: Center(
                 child: Text(
-              'HOME',
-              style: TextStyle(color: Colors.blue, fontSize: 36),
+              'H O M E',
+              style: TextStyle(color: Colors.blue, fontSize: 48),
             ))));
   }
 }
