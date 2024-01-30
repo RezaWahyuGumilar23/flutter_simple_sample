@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_simple_sample_app/home.dart';
 
 class LoginDemo extends StatefulWidget {
   const LoginDemo({super.key});
@@ -69,9 +70,9 @@ class _LoginDemoState extends State<LoginDemo> {
                   color: Colors.blue, borderRadius: BorderRadius.circular(20)),
               child: TextButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //     context, MaterialPageRoute(builder: (_) => HomePage())
-                  // );
+                  Navigator.pushReplacement(
+                      context, MaterialPageRoute(builder: (_) => const HomeDemo())
+                  );
                 },
                 child: const Text(
                   'Login',
